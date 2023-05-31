@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>My Website</title>
+    <link rel="stylesheet" href="/css/index.css">
+  </head>
+  <body>
+    <div class="box_area">
+      <div class="wrapper">
+        <div class="logo">
+          <img id="logo" src="/images/logo2.png" alt="My Logo">
+        </div>
+      </div>
+      <h1>Mystic Brew Coffee</h1>
+    </div>
+    <div>
+      <nav>
+        <a href="/index.html">Home</a>
+        <a href="/html/gallery.html">Gallery</a>
+        <a href="/html/contact.html">Contact</a>
+      </nav>
+    </div>
+    <div class="contactmain">
+      <div class="contacttext">
+        <h3>Contact Us</h3>
+        <table>
+          <tr>
+            <th>Contact Name</th>
+            <td>John Doe</td>
+          </tr>
+          <tr>
+            <th>Email Address</th>
+            <td>john.doe@example.com</td>
+          </tr>
+          <tr>
+            <th>Location</th>
+            <td>123 Main Street, City, Country</td>
+          </tr>
+          <tr>
+            <th>Phone Number</th>
+            <td>+1 123-456-7890</td>
+          </tr>
+        </table>        
+        <form>
+          <!-- Feedback Section -->
+          <h3>Customer Feedback</h3>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name"><br>
+        
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email"><br>
+          <input type="checkbox" id="promotional" name="promotional">
+          <label for="promotional">(Check box above to receive promotional junk)</label><br>
+        
+          <label for="feedback">Please provide your feedback:</label>
+          <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea><br>
+        
+          <!-- Information Request Section -->
+          <h3>Information Request</h3>
+          <label for="info">Please enter your information request:</label>
+          <input type="text" id="info" name="info"><br>
+        
+          <!-- Order Placement Section -->
+          <h3>Order Placement</h3>
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone"><br>
+        
+          <label for="address">Address:</label>
+          <input type="text" id="address" name="address"><br>
+        
+          <label for="product">Select the product:</label>
+          <select id="product" name="product">
+            <option value="product1">Product 1</option>
+            <option value="product2">Product 2</option>
+            <option value="product3">Product 3</option>
+          </select><br>
+        
+          <label for="quantity">Enter the quantity:</label>
+          <input type="number" id="quantity" name="quantity"><br>
+        
+          <!-- Signup Section -->
+          <h3>Signup</h3>
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required><br>
+        
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required><br>
+          <script>
+            function myFunction() {
+              var passwordValue = document.getElementById("password").value;
+              document.getElementById("password").value = passwordValue;
+            }
+          </script>
+          
+          <input type="submit" value="Submit">
+        </form>
+        <footer>
+          <div class="social-media">
+            <a href="https://facebook.com" target="_blank"><img src="/images/facebook.png" alt="Facebook"></a>
+            <a href="https://twitter.com" target="_blank"><img src="/images/twitter.png" alt="Twitter"></a>
+            <a href="https://instagram.com" target="_blank"><img src="/images/instagram.png" alt="Instagram"></a>
+          </div>
+          <div class="copyright">
+            &copy; 2023 Patrick Tracey. All rights reserved.
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
